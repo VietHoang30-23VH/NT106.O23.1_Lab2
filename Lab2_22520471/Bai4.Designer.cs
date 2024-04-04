@@ -152,7 +152,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add to File";
             this.btnAdd.UseVisualStyleBackColor = true;
-
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label7
             // 
@@ -225,7 +225,7 @@
             this.btnWrite.TabIndex = 0;
             this.btnWrite.Text = "Write to a File";
             this.btnWrite.UseVisualStyleBackColor = true;
-
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
             // panel2
             // 
@@ -255,9 +255,11 @@
             // 
             // txtPage
             // 
+            this.txtPage.BackColor = System.Drawing.Color.CadetBlue;
             this.txtPage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPage.Location = new System.Drawing.Point(162, 560);
             this.txtPage.Name = "txtPage";
+            this.txtPage.ReadOnly = true;
             this.txtPage.Size = new System.Drawing.Size(42, 15);
             this.txtPage.TabIndex = 34;
             this.txtPage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -270,6 +272,7 @@
             this.btnNext.TabIndex = 33;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnBack
             // 
@@ -279,6 +282,7 @@
             this.btnBack.TabIndex = 32;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtAver_2
             // 
@@ -400,6 +404,7 @@
             this.btnRead.TabIndex = 16;
             this.btnRead.Text = "Press to Read File";
             this.btnRead.UseVisualStyleBackColor = true;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
             // panel3
             // 
